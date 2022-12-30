@@ -46,7 +46,6 @@ public class AppController {
     protected void onDecryptButtonClick() {
         try {
             if (ciphertext.getText().isBlank() || encryptedSymmetricKey.getText().isBlank()) {
-//                DecryptedText.setText("");
                 DecryptedText.clear();
                 throw new Exception("No encrypted message/encrypted key is pasted!"); // throw exception
 
